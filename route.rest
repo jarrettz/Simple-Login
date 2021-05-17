@@ -1,0 +1,55 @@
+GET http://localhost:3000/api/products
+
+###
+
+GET http://localhost:3000/api/products/60a1987e5b45657f0ebb587d
+
+###
+
+POST http://localhost:3000/api/products/
+Content-Type: application/json
+
+{
+  "imgsrc": "src",
+  "title": "Ultraboost",
+  "price": "199.99",
+  "type": "Shoes",
+  "description": "Lightweight shoes made by Adidas"
+}
+
+###
+
+DELETE http://localhost:3000/api/products/60a1a6b56232268086f9043f
+
+###
+
+PATCH http://localhost:3000/api/products/60a1a49f1ce716802e3c3484
+Content-Type: application/json
+
+{
+  "title": "Ultraboost V2"
+}
+
+###
+
+GET http://localhost:3000/auth/users
+
+###
+
+POST http://localhost:3000/auth/users
+Content-Type: application/json
+
+{
+  "username": "Kyle",
+  "password": "password"
+}
+
+###
+
+POST http://localhost:3000/auth//login
+Content-Type: application/json
+
+{
+  "username": "Kyle",
+  "password": "password"
+}
